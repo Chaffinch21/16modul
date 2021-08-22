@@ -261,7 +261,7 @@ svg path {
 .validForm {
   width: 440px;
   height: 410px;
-  padding: 21px 30px 39px;
+  padding: 38px 30px 39px;
   background: rgba(0,0,0,0.4);
   border-radius: 10px
 }
@@ -273,20 +273,24 @@ svg path {
 }
 
 .validForm__label {
+  position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 14px;
 }
 
-.validForm__descr {
-  display: block;
-  margin-bottom: 5px;
-  padding-left: 20px;
+.validForm__label:not(:last-child){
+  margin-bottom: 31px;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: -32%;
+  left: 20px;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #FF5C00;
+  color: #FF5C00 !important;
 }
 
 .validForm__input {
@@ -350,7 +354,7 @@ svg path {
   position: absolute;
   bottom: 35px;
   right: 50%;
-  transform: translate(55%, 0%);
+  transform: translate(54%, 0%);
   z-index: 3;
   padding: 7px 15px;
   width: max-content;

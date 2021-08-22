@@ -21,6 +21,11 @@ new JustValidate('.validForm__form', {
       required: true,
       email: true
     }
+  },
+  messages: {
+    name:'Как вас зовут?',
+    tel: 'Укажите ваш телефон',
+    mail: 'Укажите ваш e-mail'
   }
 })
 
@@ -41,7 +46,7 @@ ymaps.ready(init);
       });
       var myPlacemark = new ymaps.Placemark([48.872185073737896,2.354223999999991], {}, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/geoMetka.svg',
+        iconImageHref: 'img/geoMetka.svg',
         iconImageSize: [28, 40],
         //iconImageOffset: [-3, -42]
       });
